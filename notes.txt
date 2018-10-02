@@ -1,0 +1,39 @@
+Dealing with async
+  retries
+  slowness
+
+handling async
+  callbacks
+    pyramid of doom
+    multiple invocations
+    error handling
+
+  promises
+    yield single value
+
+  event emitters
+    return values ignored?
+    not first class values - can't pass as params
+    miss events if you listen too late
+
+
+reactive programming addresses concurrency
+  Rx or Reactive Extensions by Microsoft
+  originally for .NET ported to ever major language
+  Angular, Apollo
+
+Observer + Iterator pattern == Rx Pattern
+  resources are streams you subscribe to
+  expressive way to manage streams
+
+Observables are the main data type
+  from Array, Events, callbacks, promises, range, etc
+
+Syntax
+  ES6
+  CommonJS (Node)
+  pipable operators in RxJS >= 6
+    preferred approach - no prototype modification, tree shaking, etc
+
+Marble diagrams
+  
