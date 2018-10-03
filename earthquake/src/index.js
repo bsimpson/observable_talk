@@ -8,10 +8,6 @@ const QUAKE_URL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all
 const map = L.map("map").setView([33.85, -118.27], 7);
 L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png").addTo(map);
 
-//const quakes = ajax(QUAKE_URL).pipe(
-//  flatMap(result => result.response.features)
-//);
-
 const quakes$ = timer(0, 5000).pipe(
     switchMap(_ => ajax(QUAKE_URL)),
     flatMap(result => result.response.features),

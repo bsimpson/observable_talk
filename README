@@ -1,0 +1,8 @@
+Examples can be run with:
+
+npm run start <number>
+
+npm run events
+npm run earthquake
+
+Slide deck at https://docs.google.com/presentation/d/1lVoVI8Fo8_znUiON9YFJo0_3oKyx8l4nTJ--aWVKELU/edit?usp=sharing
