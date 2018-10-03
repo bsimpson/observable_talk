@@ -2,6 +2,7 @@ module.exports = () => {
   const { timer, merge } = require("rxjs");
   const { pluck, bufferCount, scan, map } = require("rxjs/operators");
 
+  // Gregory-Leibniz series
   merge(
     timer(0, 100).pipe(
       bufferCount(2), // every two

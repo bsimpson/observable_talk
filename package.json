@@ -5,11 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "cd earthquake && npx webpack --mode=development",
+    "earthquake": "cd earthquake && npx http-server"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "leaflet": "^1.3.4",
     "rxjs": "^6.3.3"
+  },
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   }
 }
