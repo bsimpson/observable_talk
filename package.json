@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "build": "cd earthquake && npx webpack --mode=development",
-    "earthquake": "cd earthquake && npx http-server"
+    "build": "npx webpack --mode=development",
+    "earthquake": "cd earthquake && npx http-server",
+    "events": "cd events && npx http-server"
   },
   "author": "",
   "license": "ISC",

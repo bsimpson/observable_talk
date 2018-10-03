@@ -1,8 +1,30 @@
-Dealing with async
+Dealing with async streams
   retries
   slowness
+  debounce
 
-handling async
+reactive programming addresses concurrency
+  Rx or Reactive Extensions by Microsoft
+  originally for .NET ported to ever major language
+  Angular, Apollo projects
+  Bacon.js
+  Elm language
+  RxJava at Netflix
+
+Everything is a stream
+  from callback
+  from promise
+  from ajax
+  from event
+  from array...
+
+Purity
+  Isolate state (events example)
+
+Rich toolbox to combine create, filter stream data
+  "Lodash for streams"
+
+history of handling async
   callbacks
     pyramid of doom
     multiple invocations
@@ -17,17 +39,9 @@ handling async
     miss events if you listen too late
 
 
-reactive programming addresses concurrency
-  Rx or Reactive Extensions by Microsoft
-  originally for .NET ported to ever major language
-  Angular, Apollo
-
-Observer + Iterator pattern == Rx Pattern
+Observer + Iterator pattern == Reactive eXtension Pattern
   resources are streams you subscribe to
   expressive way to manage streams
-
-Observables are the main data type
-  from Array, Events, callbacks, promises, range, etc
 
 Syntax
   ES6
@@ -36,4 +50,6 @@ Syntax
     preferred approach - no prototype modification, tree shaking, etc
 
 Marble diagrams
-  
+  http://rxmarbles.com/
+
+Examples
